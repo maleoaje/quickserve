@@ -1,0 +1,87 @@
+name: quickserve
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  share_plus: ^3.0.4
+  get: ^4.1.4
+  firebase_core: ^1.8.0
+  firebase_database: ^8.0.1
+  shared_preferences: ^2.0.9
+  cached_network_image: ^3.2.0
+  fluttertoast: ^8.0.8
+  contacts_service: ^0.6.3
+  intl: ^0.17.0
+  pin_code_fields: ^7.3.0
+  font_awesome_flutter: ^9.2.0
+  google_fonts: ^2.1.0
+  modal_bottom_sheet: ^2.0.0
+  line_icons: ^2.0.1
+  date_time_picker: ^2.1.0
+  country_state_city_picker: ^1.2.8
+  firebase_messaging: ^11.2.5
+  logger: ^1.1.0
+  flutter_secure_storage: ^5.0.2
+  image_picker: ^0.8.4+4
+  path_provider: ^2.0.8
+  flutter_bloc: ^7.2.0
+  shimmer: ^2.0.0
+  dio: ^4.0.4
+  build_runner: ^2.1.7
+  json_serializable: ^6.1.4
+  connectivity_plus: ^2.2.0
+  flutter_credit_card: ^3.0.1
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Black.ttf
+        - asset: assets/fonts/Roboto-BlackItalic.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-BoldItalic.ttf
+        - asset: assets/fonts/Roboto-Italic.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-LightItalic.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-MediumItalic.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Thin.ttf
+        - asset: assets/fonts/Roboto-ThinItalic.ttf
+    - family: JosefinSans
+      fonts:
+        - asset: assets/fonts/JosefinSans-VariableFont_wght.ttf
+        - asset: assets/fonts/JosefinSans-Bold.ttf   
+        - asset: assets/fonts/JosefinSans-BoldItalic.ttf   
+        - asset: assets/fonts/JosefinSans-ExtraLight.ttf   
+        - asset: assets/fonts/JosefinSans-ExtraLightItalic.ttf   
+        - asset: assets/fonts/JosefinSans-Light.ttf   
+        - asset: assets/fonts/JosefinSans-Medium.ttf   
+        - asset: assets/fonts/JosefinSans-Regular.ttf   
+        - asset: assets/fonts/JosefinSans-SemiBold.ttf
+        - asset: assets/fonts/JosefinSans-SemiBold.ttf  
+        - asset: assets/fonts/JosefinSans-Thin.ttf      
+  assets:
+  - assets/
+  - assets/onboarding/
+
