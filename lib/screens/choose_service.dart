@@ -53,7 +53,7 @@ class _ChooseServiceState extends State<ChooseService> {
                         height: MediaQuery.of(context).size.width * 0.5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          color: Color.fromARGB(255, 65, 187, 211),
+                          color: const Color.fromARGB(255, 65, 187, 211),
                         ),
                         child: Image.asset(
                           'assets/delivery.png',
@@ -88,7 +88,7 @@ class _ChooseServiceState extends State<ChooseService> {
                         height: MediaQuery.of(context).size.width * 0.5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          color: Color.fromARGB(255, 65, 187, 211),
+                          color: const Color.fromARGB(255, 65, 187, 211),
                         ),
                         child: Image.asset(
                           'assets/restaurant.png',

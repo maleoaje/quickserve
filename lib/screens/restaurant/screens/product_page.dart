@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/config/global_style.dart';
 import 'package:quickserve/screens/review.dart';
@@ -87,7 +86,7 @@ class _ProductPageState extends State<ProductPage> {
               ],
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   'Fried Chicken & fries',
                   style: GlobalStyle.restaurantDesc,
@@ -95,7 +94,7 @@ class _ProductPageState extends State<ProductPage> {
               ],
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   '0',
                   style: GlobalStyle.restaurantDesc,
@@ -118,7 +117,7 @@ class _ProductPageState extends State<ProductPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: Container(
-                padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                 height: 80,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
@@ -129,7 +128,7 @@ class _ProductPageState extends State<ProductPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
-                      children: [
+                      children: const [
                         Text(
                           "N0",
                           style: GlobalStyle.h4,
@@ -141,7 +140,7 @@ class _ProductPageState extends State<ProductPage> {
                       ],
                     ),
                     Column(
-                      children: [
+                      children: const [
                         Text(
                           "0 mins",
                           style: GlobalStyle.h4,
@@ -157,7 +156,7 @@ class _ProductPageState extends State<ProductPage> {
               ),
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   'Featured items',
                   style: GlobalStyle.subTitle,
@@ -202,7 +201,7 @@ class _ProductPageState extends State<ProductPage> {
               height: 20,
             ),
             Row(
-              children: [
+              children: const [
                 Text(
                   'Reviews',
                   style: GlobalStyle.subTitle,
@@ -214,7 +213,7 @@ class _ProductPageState extends State<ProductPage> {
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   '0',
                   style: GlobalStyle.restaurantDesc,
                 ),
@@ -223,7 +222,7 @@ class _ProductPageState extends State<ProductPage> {
                   size: 15,
                   color: Colors.yellow[700],
                 ),
-                Text(
+                const Text(
                   ' (0 ratings)',
                   style: GlobalStyle.restaurantDesc,
                 ),
@@ -246,7 +245,7 @@ class _ProductPageState extends State<ProductPage> {
                             builder: (context) => const AddAReviewPage()));
                       },
                       child: Container(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         width: MediaQuery.of(context).size.width * 0.23,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
@@ -332,7 +331,7 @@ class _ProductPageState extends State<ProductPage> {
                       image,
                     ),
                     fit: BoxFit.cover),*/
-                color: Color.fromARGB(255, 235, 235, 235),
+                color: const Color.fromARGB(255, 235, 235, 235),
               ),
             ),
             const SizedBox(
@@ -369,7 +368,7 @@ class _ProductPageState extends State<ProductPage> {
     return Padding(
       padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         width: MediaQuery.of(context).size.width * 0.5,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -453,11 +452,11 @@ class _ProductPageState extends State<ProductPage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             height: 120,
             width: MediaQuery.of(context).size.width * 0.5,
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 235, 235, 235),
+              color: const Color.fromARGB(255, 235, 235, 235),
               borderRadius: BorderRadius.circular(15),
             ),
           )

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/screens/delivery/screens/account_screens/change_password.dart';
 
@@ -244,7 +243,7 @@ class _PersonalInformatonState extends State<PersonalInformaton> {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => ChangePasswordPage()));
+                          builder: (context) => const ChangePasswordPage()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(10, 15, 10, 15),

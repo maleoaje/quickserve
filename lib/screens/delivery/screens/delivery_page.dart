@@ -34,14 +34,14 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
             onTap: () {
               Navigator.pop(context);
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back,
               color: black,
             ),
           ),
           title: Text(
             widget.pageTitle,
-            style: TextStyle(
+            style: const TextStyle(
               color: black,
             ),
           ),
@@ -292,7 +292,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Text(
                         'Subtotal',
                       )
@@ -300,7 +300,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'N900',
                       )
@@ -320,7 +320,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   Row(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             'Delivery Fee ',
                           ),
@@ -334,7 +334,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'N900',
                       )
@@ -354,7 +354,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   Row(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             'Fee & Estimated Tax ',
                           ),
@@ -368,7 +368,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'N900',
                       )
@@ -396,7 +396,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
               child: Row(
                 children: [
                   Row(
-                    children: [
+                    children: const [
                       Text(
                         'Mastercard ',
                       )
@@ -404,7 +404,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         '**** 2502',
                         style: GlobalStyle.liteText,
@@ -420,7 +420,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
             Row(
               children: [
                 Row(
-                  children: [
+                  children: const [
                     Text(
                       'Server Tips ',
                     ),
@@ -441,7 +441,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   height: 40,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: Color(0xffe0e0e0),
+                    color: const Color(0xffe0e0e0),
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Row(
@@ -454,11 +454,12 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                           });
                         },
                         child: Container(
-                            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             height: 40,
                             decoration: BoxDecoration(
-                              color:
-                                  currentTip == 0 ? black : Color(0xffe0e0e0),
+                              color: currentTip == 0
+                                  ? black
+                                  : const Color(0xffe0e0e0),
                               borderRadius: BorderRadius.circular(50),
                             ),
                             child: Center(
@@ -476,11 +477,12 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                           });
                         },
                         child: Container(
-                            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             height: 40,
                             decoration: BoxDecoration(
-                              color:
-                                  currentTip == 1 ? black : Color(0xffe0e0e0),
+                              color: currentTip == 1
+                                  ? black
+                                  : const Color(0xffe0e0e0),
                               borderRadius: BorderRadius.circular(50),
                             ),
                             child: Center(
@@ -498,11 +500,12 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                           });
                         },
                         child: Container(
-                            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             height: 40,
                             decoration: BoxDecoration(
-                              color:
-                                  currentTip == 2 ? black : Color(0xffe0e0e0),
+                              color: currentTip == 2
+                                  ? black
+                                  : const Color(0xffe0e0e0),
                               borderRadius: BorderRadius.circular(50),
                             ),
                             child: Center(
@@ -521,11 +524,12 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                           _onOtherButtonPressed();
                         },
                         child: Container(
-                            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             height: 40,
                             decoration: BoxDecoration(
-                              color:
-                                  currentTip == 3 ? black : Color(0xffe0e0e0),
+                              color: currentTip == 3
+                                  ? black
+                                  : const Color(0xffe0e0e0),
                               borderRadius: BorderRadius.circular(50),
                             ),
                             child: Center(
@@ -550,7 +554,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   Row(
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Text(
                             'Total (including tip) ',
                             style: GlobalStyle.h3,
@@ -561,7 +565,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
                         'N 900',
                         style: GlobalStyle.h3,
@@ -608,7 +612,7 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
                             color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.credit_card_sharp,
                         color: white,
                         size: 30,
@@ -672,22 +676,22 @@ class _DeliveryDetailsPageState extends State<DeliveryDetailsPage> {
           keyboardType: TextInputType.number,
           controller: _etOtherAmount,
           style: const TextStyle(color: primaryDark, fontSize: 14),
-          decoration: InputDecoration(
-            prefixIcon: const Icon(
+          decoration: const InputDecoration(
+            prefixIcon: Icon(
               LineIcons.moneyBill,
               color: primaryDark,
             ),
-            fillColor: const Color(0xffe0e0e0),
-            focusedBorder: const UnderlineInputBorder(
+            fillColor: Color(0xffe0e0e0),
+            focusedBorder: UnderlineInputBorder(
                 borderSide: BorderSide(color: primaryDark, width: 0)),
-            enabledBorder: const UnderlineInputBorder(
+            enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                 width: 2,
                 color: Color(0xFFCCCCCC),
               ),
             ),
             labelText: '',
-            labelStyle: const TextStyle(
+            labelStyle: TextStyle(
               color: primaryDark,
             ),
           ),

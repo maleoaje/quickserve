@@ -1,12 +1,12 @@
+// ignore_for_file: prefer_final_fields
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:quickserve/auth/choose_sign.dart';
-import 'package:quickserve/auth/sign_up.dart';
 import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/library/flutter_overboard/circular_clipper.dart';
 import 'package:quickserve/library/flutter_overboard/overboard_animator.dart';
 import 'package:quickserve/models/onboarding/page_model.dart';
-import 'package:quickserve/reusables/cache_image_network.dart';
 
 enum SwipeDirection { leftToRight, rightToLeft, skipToLast }
 
@@ -330,24 +330,6 @@ class _OverBoardState extends State<OverBoard> with TickerProviderStateMixin {
               ),
             ),
     );
-  }
-
-  _next() {
-    setState(() {
-      _swipeDirection = SwipeDirection.rightToLeft;
-      _last = _counter;
-      _counter++;
-    });
-    _animate();
-  }
-
-  _skip() {
-    setState(() {
-      _swipeDirection = SwipeDirection.skipToLast;
-      _last = _counter;
-      _counter = _total - 1;
-    });
-    _animate();
   }
 
   _animate() {

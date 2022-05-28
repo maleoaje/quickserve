@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:quickserve/auth/forgot_password.dart';
 import 'package:quickserve/auth/sign_up.dart';
@@ -8,7 +7,7 @@ import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/screens/choose_service.dart';
 
 class SignInPage extends StatefulWidget {
-  SignInPage({Key? key}) : super(key: key);
+  const SignInPage({Key? key}) : super(key: key);
 
   @override
   State<SignInPage> createState() => _SignInPageState();
@@ -31,20 +30,6 @@ class _SignInPageState extends State<SignInPage> {
     });
   }
 
-  DateTime? _currentBackPressTime;
-  Future<bool> _onWillPop() {
-    DateTime now = DateTime.now();
-    if (_currentBackPressTime == null ||
-        now.difference(_currentBackPressTime!) > const Duration(seconds: 2)) {
-      _currentBackPressTime = now;
-      Fluttertoast.showToast(
-          backgroundColor: primaryDark,
-          msg: 'Press back again to exit',
-          toastLength: Toast.LENGTH_LONG);
-      return Future.value(false);
-    }
-    return Future.value(true);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +182,8 @@ class _SignInPageState extends State<SignInPage> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => ForgotPasswordPage()));
+                              builder: (context) =>
+                                  const ForgotPasswordPage()));
                         },
                         child: Text(
                           'forgot password?',
@@ -292,7 +278,7 @@ class _SignInPageState extends State<SignInPage> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => SignUpPage()));
+                              builder: (context) => const SignUpPage()));
                         },
                         child: const Text(
                           ' Sign Up',

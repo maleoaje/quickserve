@@ -56,7 +56,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                 Container(
                   padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 213, 213, 213),
+                      color: const Color.fromARGB(255, 213, 213, 213),
                       borderRadius: BorderRadius.circular(30)),
                   child: const Text(
                     'Q-POINT: 30 POINTS',
@@ -83,7 +83,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                     height: MediaQuery.of(context).size.height * 0.3,
                     padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 28, 125, 145),
+                        color: const Color.fromARGB(255, 28, 125, 145),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.black.withOpacity(0.08),
@@ -129,7 +129,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                     height: MediaQuery.of(context).size.height * 0.3,
                     padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 23, 126, 83),
+                        color: const Color.fromARGB(255, 23, 126, 83),
                         boxShadow: [
                           BoxShadow(
                               color: Colors.black.withOpacity(0.08),
@@ -263,7 +263,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
               height: MediaQuery.of(context).size.width * 0.34,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0),
-                color: Color.fromARGB(255, 243, 243, 243),
+                color: const Color.fromARGB(255, 243, 243, 243),
                 boxShadow: [
                   BoxShadow(
                       color: Colors.black.withOpacity(0.08),

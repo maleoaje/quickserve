@@ -257,9 +257,9 @@ class _HomePageRestaurantState extends State<HomePageRestaurant> {
                 children: [
                   Container(
                     height: 40,
-                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 218, 218, 218),
+                        color: const Color.fromARGB(255, 218, 218, 218),
                         borderRadius: BorderRadius.circular(30)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -272,11 +272,12 @@ class _HomePageRestaurantState extends State<HomePageRestaurant> {
                           width: 10,
                         ),
                         DropdownButton(
-                          hint: Text('Ratings'),
+                          hint: const Text('Ratings'),
                           // Initial Value
                           value: dropdownvalue, elevation: 0,
                           borderRadius: BorderRadius.circular(10),
-                          dropdownColor: Color.fromARGB(255, 238, 238, 238),
+                          dropdownColor:
+                              const Color.fromARGB(255, 238, 238, 238),
 
                           // Down Arrow Icon
                           icon: const Icon(Icons.keyboard_arrow_down),
@@ -287,7 +288,7 @@ class _HomePageRestaurantState extends State<HomePageRestaurant> {
                               value: items,
                               child: Text(
                                 items,
-                                style: TextStyle(fontSize: 14),
+                                style: const TextStyle(fontSize: 14),
                               ),
                             );
                           }).toList(),

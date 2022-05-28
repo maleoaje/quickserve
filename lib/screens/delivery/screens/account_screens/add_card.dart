@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/credit_card_brand.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
@@ -157,9 +159,9 @@ class _AddCardState extends State<AddCard> {
                         ),
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-                            print('valid!');
+                            log('valid!');
                           } else {
-                            print('invalid!');
+                            log('invalid!');
                           }
                         },
                       ),

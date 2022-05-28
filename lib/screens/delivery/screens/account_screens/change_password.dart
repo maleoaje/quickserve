@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:line_icons/line_icons.dart';
-import 'package:quickserve/auth/sign_up.dart';
 import 'package:quickserve/config/constants.dart';
 
 class ChangePasswordPage extends StatefulWidget {
-  ChangePasswordPage({Key? key}) : super(key: key);
+  const ChangePasswordPage({Key? key}) : super(key: key);
 
   @override
   State<ChangePasswordPage> createState() => _ChangePasswordPageState();

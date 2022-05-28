@@ -3,7 +3,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:quickserve/auth/choose_sign.dart';
 import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/screens/delivery/screens/account_screens/address.dart';
-import 'package:quickserve/screens/delivery/screens/account_screens/become_a_Partner_restaurant.dart';
+import 'package:quickserve/screens/delivery/screens/account_screens/become_a_partner_restaurant.dart';
 import 'package:quickserve/screens/delivery/screens/account_screens/become_a_qserver.dart';
 import 'package:quickserve/screens/delivery/screens/account_screens/get_help.dart';
 import 'package:quickserve/screens/delivery/screens/account_screens/notifications.dart';

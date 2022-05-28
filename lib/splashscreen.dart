@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:quickserve/auth/choose_sign.dart';
 import 'package:quickserve/config/constants.dart';
-import 'package:quickserve/onboarding.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {

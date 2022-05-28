@@ -1,9 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:quickserve/config/constants.dart';
 import 'package:quickserve/config/global_style.dart';
 import 'package:quickserve/library/smooth_star_rating/smooth_star_rating.dart';
-import 'package:quickserve/reusables/global_function.dart';
-import 'package:quickserve/reusables/global_widget.dart';
 
 class AddAReviewPage extends StatefulWidget {
   const AddAReviewPage({Key? key}) : super(key: key);
@@ -13,10 +13,6 @@ class AddAReviewPage extends StatefulWidget {
 }
 
 class _AddAReviewPageState extends State<AddAReviewPage> {
-  // initialize global function and global widget
-  final _globalFunction = GlobalFunction();
-  final _globalWidget = GlobalWidget();
-
   double _rating = 0;
   @override
   void initState() {
@@ -38,7 +34,7 @@ class _AddAReviewPageState extends State<AddAReviewPage> {
         body: ListView(
           children: [
             Container(
-                margin: EdgeInsets.all(24),
+                margin: const EdgeInsets.all(24),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -46,13 +42,13 @@ class _AddAReviewPageState extends State<AddAReviewPage> {
                       borderRadius: BorderRadius.all(Radius.circular(4)),
                       child: buildCacheNetworkImage(width: boxImageSize, height: boxImageSize, url: widget.image)),
                  */
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Expanded(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Text(
                             'Rate your food',
                             style: GlobalStyle.productName,
@@ -70,13 +66,13 @@ class _AddAReviewPageState extends State<AddAReviewPage> {
             ),
             Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(top: 32),
-                child: Text('Rate food',
+                margin: const EdgeInsets.only(top: 32),
+                child: const Text('Rate food',
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
             Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(top: 32),
+                margin: const EdgeInsets.only(top: 32),
                 child: SmoothStarRating(
                   rating: 5,
                   isReadOnly: false,
@@ -90,16 +86,16 @@ class _AddAReviewPageState extends State<AddAReviewPage> {
                   spacing: 1,
                   onRated: (value) {
                     _rating = value;
-                    print("rating value -> $_rating");
+                    log("rating value -> $_rating");
                     // print("rating value dd -> ${value.truncate()}");
                   },
                 )),
             Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(top: 32, left: 24, right: 24),
-                child: Text('Review Message')),
+                margin: const EdgeInsets.only(top: 32, left: 24, right: 24),
+                child: const Text('Review Message')),
             Container(
-              margin: EdgeInsets.fromLTRB(24, 0, 24, 0),
+              margin: const EdgeInsets.fromLTRB(24, 0, 24, 0),
               child: TextField(
                 maxLines: null,
                 decoration: InputDecoration(

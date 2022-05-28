@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quickserve/auth/choose_sign.dart';
-import 'package:quickserve/auth/sign_up.dart';
 import 'package:quickserve/library/flutter_overboard/overboard.dart';
 import 'package:quickserve/models/onboarding/page_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';

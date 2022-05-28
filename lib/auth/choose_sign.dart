@@ -73,7 +73,7 @@ class _ChooseSignState extends State<ChooseSign> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => SignUpPage()));
+                            builder: (context) => const SignUpPage()));
                       },
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(30, 12, 30, 12),
@@ -111,7 +111,7 @@ class _ChooseSignState extends State<ChooseSign> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => SignInPage()));
+                            builder: (context) => const SignInPage()));
                       },
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(30, 12, 30, 12),
