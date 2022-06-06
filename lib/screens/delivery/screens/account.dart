@@ -120,7 +120,7 @@ class _AccountPageDeliveryState extends State<AccountPageDelivery> {
                     MaterialPageRoute(builder: (context) => const Payment()));
               },
               child: _buildAccountSettingsCard('Payment', LineIcons.creditCard,
-                  'Select new payment method or add new payment method'),
+                  'Select or add new payment method'),
             ),
             GestureDetector(
               onTap: () {
@@ -128,7 +128,7 @@ class _AccountPageDeliveryState extends State<AccountPageDelivery> {
                     builder: (context) => const AddressPage()));
               },
               child: _buildAccountSettingsCard(
-                  'Address', LineIcons.addressCard, 'Add or change an address'),
+                  'Address', LineIcons.addressCard, 'Add or change address'),
             ),
             GestureDetector(
               onTap: () {
