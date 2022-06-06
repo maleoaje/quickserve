@@ -47,7 +47,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                   child: const CircleAvatar(
                     child: Icon(LineIcons.userCircle, color: white, size: 60),
                     radius: 30,
-                    backgroundColor: Color.fromARGB(255, 213, 213, 213),
+                    backgroundColor: Color.fromARGB(255, 244, 243, 243),
                     /*backgroundImage: NetworkImage(
                               '',
                             ),*/
@@ -59,7 +59,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                       color: const Color.fromARGB(255, 213, 213, 213),
                       borderRadius: BorderRadius.circular(30)),
                   child: const Text(
-                    'Q-POINT: 30 POINTS',
+                    'Q-POINT: 0 POINTS',
                     style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
                   ),
                 )
@@ -143,7 +143,7 @@ class _HomePageDeliveryState extends State<HomePageDelivery> {
                         const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Text(
-                            'You can use your quick points to make redeem a free delivery',
+                            'Use your quick points to make redeem a free delivery',
                             style: TextStyle(color: white),
                           ),
                         ),
