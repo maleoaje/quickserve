@@ -192,7 +192,7 @@ class _AccountPageDeliveryState extends State<AccountPageDelivery> {
                   FocusScope.of(context).unfocus();
                 },
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 15, 10, 15),
+                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
